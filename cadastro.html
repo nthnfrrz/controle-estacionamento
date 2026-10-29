@@ -39,6 +39,30 @@
                     <label for="cor">Cor</label>
                     <input type="text" id="cor" name="cor" placeholder="Ex.: Prata" required>
                 </div>
+                
+            </fieldset>
+                        <fieldset>
+                <legend>Dados do proprietário</legend>
+
+                <div class="campo">
+                    <label for="nome">Nome do proprietário</label>
+                    <input type="text" id="nome" name="nome" placeholder="Ex.: Maria Souza" required>
+                </div>
+
+                <div class="campo">
+                    <label for="apartamento">Número do apartamento</label>
+                    <input type="number" id="apartamento" name="apartamento" placeholder="Ex.: 302" min="1" required>
+                </div>
+
+                <div class="campo">
+                    <label for="bloco">Bloco</label>
+                    <select id="bloco" name="bloco" required>
+                        <option value="">Selecione o bloco</option>
+                        <option value="A">Bloco A</option>
+                        <option value="B">Bloco B</option>
+                        <option value="C">Bloco C</option>
+                    </select>
+                </div>
             </fieldset>
         </form>
     </main>

@@ -1,0 +1,45 @@
+/* Estilos gerais */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F1F2F7;
+    color: #181A27;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #181A27;
+    color: #FFFFFF;
+    padding: 16px 32px;
+    border-bottom: 4px solid #5C5CFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 24px;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    text-decoration-color: #5C5CFF;
+}

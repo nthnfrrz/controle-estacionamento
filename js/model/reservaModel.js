@@ -1,6 +1,6 @@
 // Model: guarda as reservas e as operações sobre elas
 
-let reservas = [
+const reservasIniciais = [
     {
         placa: 'BRA2E19',
         nome: 'Nathan Ferraz',
@@ -21,8 +21,25 @@ let reservas = [
     }
 ];
 
+function carregarReservas() {
+    let dadosSalvos = localStorage.getItem('reservas');
+
+    if (dadosSalvos) {
+        return JSON.parse(dadosSalvos);
+    }
+
+    return reservasIniciais;
+}
+
+function gravarReservas() {
+    localStorage.setItem('reservas', JSON.stringify(reservas));
+}
+
+let reservas = carregarReservas();
+
 function salvarReserva(reserva) {
     reservas.push(reserva);
+    gravarReservas();
 }
 
 function listarReservas() {

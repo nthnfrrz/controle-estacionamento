@@ -16,4 +16,8 @@ formulario.addEventListener('submit', function (evento) {
     };
 
     console.log(reserva);
+    
+    salvarReserva(reserva);
+    alert('Reserva cadastrada com sucesso!');
+    formulario.reset();
 });

@@ -43,3 +43,66 @@ nav a:hover {
     text-decoration: underline;
     text-decoration-color: #5C5CFF;
 }
+
+/* Conteúdo principal e formulário */
+main {
+    max-width: 640px;
+    margin: 32px auto;
+    padding: 0 16px;
+}
+
+main h2 {
+    color: #2B2F47;
+}
+
+form {
+    background-color: #FFFFFF;
+    border: 1px solid #DCDEEA;
+    border-radius: 12px;
+    padding: 24px;
+}
+
+fieldset {
+    border: 1px solid #DCDEEA;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 0 0 20px 0;
+}
+
+legend {
+    color: #2B2F47;
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+}
+
+.campo label {
+    color: #2B2F47;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.campo input,
+.campo select {
+    padding: 10px;
+    border: 1px solid #DCDEEA;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 16px;
+    color: #181A27;
+}
+
+.campo input::placeholder {
+    color: #9196AD;
+}
+
+.campo input:focus,
+.campo select:focus {
+    border-color: #5C5CFF;
+    outline: 2px solid #5C5CFF;
+}

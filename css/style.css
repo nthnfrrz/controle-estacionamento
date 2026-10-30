@@ -106,3 +106,22 @@ legend {
     border-color: #5C5CFF;
     outline: 2px solid #5C5CFF;
 }
+
+/* Botão principal */
+.botao-principal {
+    width: 100%;
+    padding: 12px;
+    background-color: #5C5CFF;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botao-principal:hover {
+    background-color: #2B2F47;
+}

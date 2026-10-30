@@ -45,3 +45,8 @@ function salvarReserva(reserva) {
 function listarReservas() {
     return reservas;
 }
+
+function removerReserva(posicao) {
+    reservas.splice(posicao, 1);
+    gravarReservas();
+}

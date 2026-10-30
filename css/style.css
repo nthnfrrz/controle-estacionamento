@@ -154,3 +154,20 @@ th {
 tbody tr:hover {
     background-color: #F1F2F7;
 }
+
+/* Botão de remover na tabela */
+.botao-remover {
+    padding: 6px 12px;
+    background-color: #FFFFFF;
+    color: #2B2F47;
+    border: 1px solid #DCDEEA;
+    border-radius: 6px;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.botao-remover:hover {
+    background-color: #2B2F47;
+    color: #FFFFFF;
+}

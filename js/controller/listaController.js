@@ -19,9 +19,25 @@ function exibirReservas() {
             <td>${reserva.nome}</td>
             <td>${reserva.apartamento}</td>
             <td>${reserva.bloco}</td>
-            <td></td>
         `;
 
+        let botaoRemover = document.createElement('button');
+        botaoRemover.innerHTML = 'Remover';
+        botaoRemover.classList.add('botao-remover');
+
+        botaoRemover.addEventListener('click', function () {
+            let confirmou = confirm(`Deseja remover a reserva da vaga ${reserva.vaga}?`);
+
+            if (confirmou) {
+                removerReserva(i);
+                exibirReservas();
+            }
+        });
+
+        let celulaAcoes = document.createElement('td');
+        celulaAcoes.appendChild(botaoRemover);
+        linha.appendChild(celulaAcoes);
+        
         corpoTabela.appendChild(linha);
     }
 }

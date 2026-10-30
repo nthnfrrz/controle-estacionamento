@@ -125,3 +125,32 @@ legend {
 .botao-principal:hover {
     background-color: #2B2F47;
 }
+
+/* Tabela de vagas cadastradas */
+.conteudo-largo {
+    max-width: 1000px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #FFFFFF;
+    border: 1px solid #DCDEEA;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #DCDEEA;
+}
+
+th {
+    background-color: #2B2F47;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+tbody tr:hover {
+    background-color: #F1F2F7;
+}

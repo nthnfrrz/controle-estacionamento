@@ -1,5 +1,7 @@
 // Model: guarda as reservas e as operações sobre elas
 
+const TOTAL_VAGAS = 20;
+
 const reservasIniciais = [
     {
         placa: 'BRA2E19',
@@ -49,4 +51,28 @@ function listarReservas() {
 function removerReserva(posicao) {
     reservas.splice(posicao, 1);
     gravarReservas();
+}
+
+function obterTotalVagas() {
+    return TOTAL_VAGAS;
+}
+
+function listarVagasDisponiveis() {
+    let disponiveis = [];
+
+    for (let numero = 1; numero <= TOTAL_VAGAS; numero++) {
+        let ocupada = false;
+
+        for (let i = 0; i < reservas.length; i++) {
+            if (reservas[i].vaga === numero) {
+                ocupada = true;
+            }
+        }
+
+        if (!ocupada) {
+            disponiveis.push(numero);
+        }
+    }
+
+    return disponiveis;
 }

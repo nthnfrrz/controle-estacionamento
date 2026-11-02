@@ -171,3 +171,43 @@ tbody tr:hover {
     background-color: #2B2F47;
     color: #FFFFFF;
 }
+
+/* Vagas disponíveis */
+.grade-vagas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 12px;
+}
+
+.cartao-vaga {
+    background-color: #FFFFFF;
+    border: 1px solid #DCDEEA;
+    border-top: 4px solid #5C5CFF;
+    border-radius: 8px;
+    padding: 16px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation-name: fade-in;
+    animation-duration: 0.6s;
+}
+
+.cartao-vaga span {
+    color: #9196AD;
+    font-size: 12px;
+}
+
+.cartao-vaga strong {
+    color: #181A27;
+    font-size: 28px;
+}
+
+/* Animação de entrada dos cartões */
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

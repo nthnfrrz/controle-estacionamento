@@ -44,11 +44,15 @@ nav a:hover {
     text-decoration-color: #5C5CFF;
 }
 
-   nav a.ativo {
-       font-weight: bold;
-       padding-bottom: 4px;
-       border-bottom: 3px solid #5C5CFF;
-   }
+nav a.ativo {
+    font-weight: bold;
+    padding-bottom: 4px;
+    border-bottom: 3px solid #5C5CFF;
+}
+
+nav a.ativo:hover {
+    text-decoration: none;
+}
 
 /* Conteúdo principal e formulário */
 main {
@@ -213,7 +217,46 @@ tbody tr:hover {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
+    }
+}
+
+/* Tabela com rolagem lateral quando não couber */
+.tabela-rolagem {
+    overflow-x: auto;
+}
+
+/* Ajustes para telas pequenas (celular) */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 12px;
+        padding: 16px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px 16px;
+    }
+
+    nav a {
+        white-space: nowrap;
+    }
+
+    th,
+    td {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .grade-vagas {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }

@@ -44,6 +44,12 @@ nav a:hover {
     text-decoration-color: #5C5CFF;
 }
 
+   nav a.ativo {
+       font-weight: bold;
+       padding-bottom: 4px;
+       border-bottom: 3px solid #5C5CFF;
+   }
+
 /* Conteúdo principal e formulário */
 main {
     max-width: 640px;
